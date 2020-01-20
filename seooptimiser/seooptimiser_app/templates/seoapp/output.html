@@ -1,0 +1,15 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/output.css' %}">
+
+{% with name=output %}     
+<html>
+<body>  
+<div>
+    <p>{{name}}
+    </p>
+</div>
+<h1>HELL YEAH, IT WORKS!</h1>
+</body>
+</html>
+{% endwith %}

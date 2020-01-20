@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+</html>
+<head>
+    <meta charset="UTF-8">
+{% block title %}<title>Local Library</title>{% endblock %}
+</head>
+<body>
+
+<form action=" " method="post">
+    {% csrf_token %}
+    {{ form }}
+    <!-- <input name="link">
+    <input name="keyword"> -->
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
