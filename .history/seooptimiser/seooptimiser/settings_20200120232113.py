@@ -25,7 +25,7 @@ SECRET_KEY = 'u@6cs@k5z(6&2+5ef(f5k$!+b-b@ck$9$^z6!_lt!cp4-cm2m)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['157.245.33.34','cooldomain.ml', '127.0.0.1']
+ALLOWED_HOSTS = ['157.245.33.34','cooldomain.ml']
 
 
 # Application definition
@@ -135,7 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '../static/')
 
 STATICFILES_FINDERS = (
 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
