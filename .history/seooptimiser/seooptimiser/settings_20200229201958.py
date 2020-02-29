@@ -71,30 +71,30 @@ TEMPLATES = [
 WSGI_APPLICATION = 'seooptimiser.wsgi.application'
 
 
-# Database
+Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/databases
-# if DEBUG:
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'postgres',
+            'USER': 'postgres',
+            'PASSWORD': '350350f350350f',
+            'HOST': 'localhost',
+            'PORT': '5432',
+            }
+    }
+else:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '350350f350350f',
+        'NAME': 'test',
+        'USER': 'testuser',
+        'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '5432',
         }
 }
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#             'NAME': 'test',
-#             'USER': 'testuser',
-#             'PASSWORD': '123',
-#             'HOST': 'localhost',
-#             'PORT': '5432',
-#             }
-#     }
 
 
 
