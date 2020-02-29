@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u@6cs@k5z(6&2+5ef(f5k$!+b-b@ck$9$^z6!_lt!cp4-cm2m)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['157.245.33.34','cooldomain.ml', '127.0.0.1']
+ALLOWED_HOSTS = ['178.128.246.45', '127.0.0.1']
 
 
 # Application definition
@@ -71,26 +71,26 @@ TEMPLATES = [
 WSGI_APPLICATION = 'seooptimiser.wsgi.application'
 
 
-Database
+# Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'postgres',
-            'USER': 'postgres',
-            'PASSWORD': '350350f350350f',
-            'HOST': 'localhost',
-            'PORT': '5432',
-            }
-    }
-else:
+# if DEBUG:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'postgres',
+#             'USER': 'postgres',
+#             'PASSWORD': '350350f350350f',
+#             'HOST': 'localhost',
+#             'PORT': '5432',
+#             }
+#     }
+# else:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'seooptimiser',
-        'USER': 'pikachu',
-        'PASSWORD': '350350f350350f',
+        'NAME': 'test',
+        'USER': 'testuser',
+        'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '5432',
         }
